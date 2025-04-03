@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e8f5e9;
+            color: #333;
+        }
+        header {
+            background: url('premium_photo-1661775756810-82dbd209fc95.avif') no-repeat center/cover;
+            color: white;
+            padding: 3rem;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        section {
+            padding: 2rem;
+            background-color: white;
+            margin: 1rem auto;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #2e7d32;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #a5d6a7;
+            border-radius: 5px;
+            background-color: #f1f8e9;
+        }
+        button {
+            background-color: #388e3c;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2e7d32;
+        }
+        /* Add space between projects */
+        #projects ul li {
+            margin-bottom: 20px; /* Adds space between each project */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Simon Letsela</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            My name is Simon Letsela, and I am deeply passionate about technology. I believe that technology has the power to transform the world, and it is this belief that drives me every day. What motivates me is the opportunity to innovate and create solutions that can make a positive impact. I am constantly exploring new ways to harness technology to solve real-world problems and drive change, both in my personal and professional life.
+        </p>
+    </section>
+    
+    <section id="skills">
+        <h2>Programming Languages</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            
+        </ul>
+    </section>
+    
+    <section id="education">
+        <h2>Educational Background</h2>
+        <p>Here is the link to. <a href="cv.pdf" download>Download CV</a></p>
+        <ul>
+            <li>
+                <strong>BCom in Financial Accounting</strong><br>
+                North West University | Year Graduated 2012<br>
+                Gained a strong foundation in financial accounting, management accounting, and business principles.<br>
+                Acquired practical skills in financial analysis, taxation, and auditing.
+            </li>
+            <li>
+                <strong>Pastel Partner</strong><br>
+                Sage Pastel Partner | Year Completed 2013<br>
+                Mastered the use of Pastel Partner software for financial management and accounting tasks.<br>
+                Developed expertise in managing financial records, generating reports, and streamlining accounting processes.
+            </li>
+            <li>
+                <strong>CompTIA A+ Certification</strong><br>
+                CompTIA | Year Certified 2018<br>
+                Gained foundational knowledge in IT hardware, software, and troubleshooting.<br>
+                Developed skills in supporting and maintaining computer systems, networks, and devices.
+            </li>
+        </ul>
+    </section>
+    
+    <section id="interests">
+        <h2>Interests</h2>
+        <p>I am deeply passionate about technology and its ability to drive change. My professional interests revolve around:</p>
+        <ul>
+            <li>Exploring the world of full-stack development and software engineering.</li>
+            <li>Building innovative solutions to complex problems through technology.</li>
+            <li>Learning and implementing DevOps practices to streamline development and operations.</li>
+            <li>Advancing my skills in IT support and system administration.</li>
+            <li>Keeping up with the latest tech trends, tools, and frameworks.</li>
+        </ul>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <strong><a href="#project1">Project 1: Full-Stack Event Registration System</a></strong><br>
+                Develop a full-stack web application that allows users to register for events, such as marathons or conferences. The system should allow participants to select a T-shirt size, complete registration, and make payments through integration with Stripe or PayPal. An admin panel will track registrations, T-shirt orders, and payment statuses, and offer export functionality for event management.
+            </li>
+            <li>
+                <strong><a href="#project2">Project 2: IT Asset Management System</a></strong><br>
+                Create a comprehensive IT asset management system for businesses. The application will allow IT departments to track and manage hardware, software, and network devices. Features will include asset lifecycle tracking, audit logs, warranty management, and reports for asset status and depreciation. Users can also create and manage service tickets related to their assets.
+            </li>
+            <li>
+                <strong><a href="#project3">Project 3: Financial Dashboard with Pastel Integration</a></strong><br>
+                Develop a financial dashboard that integrates with Pastel Partner to provide real-time financial insights. This dashboard will pull data from accounting software to display key financial metrics, such as cash flow, profit and loss, and balance sheets. Users can interact with the dashboard, generate financial reports, and analyze trends, with the ability to export data for further analysis.
+            </li>
+        </ul>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</body>
+</html>
